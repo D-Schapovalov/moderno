@@ -1,0 +1,19 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #888;
+	font-size: 45px;
+	padding: 0;
+	text-decoration: none;
+}
+.text {
+	margin: 23px;
+	padding: 30px;
+	display: block;
+}
