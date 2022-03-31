@@ -25,11 +25,10 @@
 
 	&__inner-box {
 		display: flex;
-		// justify-content: space-between;
 		flex-wrap: wrap;
 		align-items: start;
 		margin-bottom: 78px;
-		margin: 0 -12px;
+		margin: 0 -12px 78px -12px;
 	}
 	&__bottom-btn {
 		text-align: center;
@@ -107,6 +106,7 @@
 	&__item-author {
 		display: flex;
 		align-items: center;
+		min-width: 245px;
 		span {
 			font-weight: 500;
 			color: $gray;
@@ -125,6 +125,10 @@
 
 	&__item-star {
 		font-size: 12px;
-		color: $gray;
+		display: flex;
+		align-items: center;
+		span {
+			color: $gray;
+		}
 	}
 }

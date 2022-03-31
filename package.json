@@ -20,6 +20,7 @@
 		"mixitup": "^3.3.1",
 		"node-sass": "^7.0.1",
 		"normalize.css": "^8.0.1",
+		"rateyo": "^2.3.5",
 		"sass": "^1.49.9",
 		"slick-carousel": "^1.8.1"
 	}
