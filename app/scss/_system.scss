@@ -11,17 +11,14 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
+	color: $gray-bg;
 }
 ul {
 	list-style: none;
 }
 a {
 	text-decoration: none;
-}
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 15px;
+	color: $gray-bg;
 }
 h1,
 h2,
@@ -31,4 +28,27 @@ h5,
 h6 {
 	padding: 0;
 	margin: 0;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container-fluid {
+	min-width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+@media (max-width: 720px) {
+	.container-fluid {
+		padding: 0 15px;
+	}
+}
+.title {
+	font-size: 36px;
+	line-height: 60px;
+	font-weight: 700;
+	color: $gray-bg;
+	text-align: center;
+	margin-bottom: 55px;
 }
