@@ -1,0 +1,62 @@
+.advantages {
+	min-height: 616px;
+	padding: 115px 0;
+	background-color: $gray-bg;
+
+	&__title {
+		color: $white;
+	}
+
+	&__inner {
+		@include flex;
+		padding: 0 15px;
+	}
+
+	&__item {
+		max-width: 318px;
+		text-align: center;
+		&:hover {
+			.advantages__item-images {
+				background-color: $green;
+				svg {
+					g {
+						fill: $white;
+					}
+				}
+			}
+			.advantages__item-title {
+				color: $green;
+			}
+		}
+	}
+
+	&__item-images {
+		height: 113px;
+		width: 113px;
+		border-radius: 50%;
+		@include flex;
+		margin: 0 auto;
+		background-color: $white;
+		margin-bottom: 33px;
+		svg {
+			height: 67px;
+			width: 50px;
+			width: 100%;
+		}
+	}
+
+	&__item-title {
+		font-size: 24px;
+		font-weight: 500;
+		color: $white;
+		margin-bottom: 26px;
+	}
+
+	&__item-text {
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #b0bec5;
+		max-width: 100%;
+	}
+}

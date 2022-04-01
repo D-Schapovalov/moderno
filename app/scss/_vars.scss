@@ -9,3 +9,9 @@ $gray-bg: #263238;
 $plaseholder: #90a4ae;
 $bg-products: #f4f6f5;
 $border: #e7ecf2;
+
+@mixin flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
