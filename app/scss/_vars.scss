@@ -15,3 +15,8 @@ $border: #e7ecf2;
 	align-items: center;
 	justify-content: space-between;
 }
+@mixin flex-start {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
