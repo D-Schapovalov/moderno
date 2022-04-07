@@ -1,0 +1,54 @@
+.hero {
+	background-size: cover;
+	min-height: 532px;
+	text-align: center;
+	padding-top: 156px;
+	padding-bottom: 100px;
+	color: $white;
+	&__header {
+		font-size: 48px;
+		line-height: 72px;
+		font-weight: 700;
+	}
+	&__text {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 500;
+		margin-top: 20px;
+	}
+	&__form {
+		max-width: 670px;
+		position: relative;
+		margin: 54px auto;
+		// display: inline-block;
+		input {
+			display: block;
+			width: 100%;
+			height: 56px;
+			border-radius: 4px;
+			border: none;
+			padding: 20px 50px 20px 25px;
+			font-size: 14px;
+			font-weight: 500;
+			letter-spacing: 0.05em;
+			outline: none;
+			&::placeholder {
+				color: $plaseholder;
+			}
+		}
+	}
+	&__btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		padding: 0 20px;
+		border: none;
+		background-color: transparent;
+		border-radius: 0 4px 4px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+}

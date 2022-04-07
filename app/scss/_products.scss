@@ -1,0 +1,134 @@
+.products {
+	min-height: 1394px;
+	padding: 110px 0;
+	background-color: $bg-products;
+
+	&__inner-btn {
+		text-align: center;
+		margin-bottom: 60px;
+		.mixitup-control-active {
+			background-color: $red;
+			color: $white;
+		}
+		button {
+			background-color: $white;
+			padding: 13px 21px;
+			border: none;
+			font-weight: 500;
+			box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+			cursor: pointer;
+			& + button {
+				margin-left: 6px;
+			}
+		}
+	}
+
+	&__inner-box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: start;
+		margin-bottom: 78px;
+		margin: 0 -12px 78px -12px;
+	}
+	&__bottom-btn {
+		text-align: center;
+		.mixitup-control-active {
+			background-color: $red;
+			color: $white;
+		}
+		button {
+			padding: 20px 30px;
+			background-color: $white;
+			border: none;
+			box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+			cursor: pointer;
+			font-size: 16px;
+			& + button {
+				margin-left: 12px;
+			}
+		}
+	}
+}
+.product {
+	&__item {
+		max-width: 442px;
+		width: 100%;
+		margin-bottom: 30px;
+		box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+		margin: 0 12px 30px 12px;
+	}
+
+	&__item-img {
+		display: block;
+		min-height: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__item-content,
+	&__item-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 30px;
+		min-height: 90px;
+	}
+
+	&__item-name {
+		min-width: 310px;
+	}
+
+	&__item-title {
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	&__item-category {
+		display: block;
+		margin-top: 11px;
+		font-size: 14px;
+		font-weight: 500;
+		color: $green-lite;
+	}
+
+	&__item-price {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__item-info {
+		min-height: 70px;
+		border-top: 1px solid $border;
+	}
+
+	&__item-author {
+		display: flex;
+		align-items: center;
+		min-width: 245px;
+		span {
+			font-weight: 500;
+			color: $gray;
+		}
+		.avatar {
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-right: 13px;
+		}
+	}
+
+	&__item-star {
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+		span {
+			color: $gray;
+		}
+	}
+}
