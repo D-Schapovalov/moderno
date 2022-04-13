@@ -1,0 +1,83 @@
+.user {
+
+  &__box {
+    margin-left: 29px;
+    margin-right: 25px;
+    padding-right: 20px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "\f107";
+      position: absolute;
+      top: 22px;
+      right: 0;
+      font-family: "icomoon";
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #707070;
+    }
+
+    &:hover {
+      .user__menu {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__info {
+    font-size: 14px;
+    margin-left: 14px;
+  }
+
+  &__name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #222222;
+  }
+
+  &__money {
+    margin-top: 4px;
+    font-weight: 700;
+    color: $green;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 90px;
+    left: -1px;
+    width: 160px;
+    min-height: 317px;
+    border: 0.2px solid #cccccc;
+    background-color: $white;
+    padding: 20px 20px 20px 34px;
+    visibility: hidden;
+  }
+
+  &__menu-list {
+    li {
+      margin-bottom: 20px;
+    }
+
+    a {
+      font-size: 12px;
+      font-weight: 400;
+      color: $gray;
+    }
+  }
+}

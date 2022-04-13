@@ -1,0 +1,101 @@
+.basket {
+
+
+  &__box {
+    display: flex;
+    align-items: center;
+    height: 90px;
+
+    &:hover {
+      .basket__menu {
+        visibility: visible;
+      }
+
+      .header__circle::before {
+        color: $black;
+      }
+
+    }
+  }
+
+  &__menu {
+    visibility: hidden;
+    position: absolute;
+    top: 90px;
+    left: -100px;
+    width: 268px;
+    min-height: 299px;
+    background-color: $white;
+    border: 0.2px solid $gray-border;
+  }
+
+  &__item {
+    width: 100%;
+    min-height: 100px;
+    border-bottom: 1px solid $gray-border;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 73px;
+    height: 57px;
+    object-fit: cover;
+  }
+
+  &__info {
+    margin-left: 15px;
+  }
+
+  &__info-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: $gray-bg;
+  }
+
+  &__info-theme {
+    font-size: 12px;
+    color: $green-lite;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__info-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+  }
+
+  &__footer {
+    min-height: 100px;
+    padding: 15px;
+  }
+
+  &__footer-title {
+    @include flex;
+  }
+
+  &__footer-total,
+  &__footer-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: $gray-bg;
+  }
+
+  &__footer-btns {
+    margin-top: 17px;
+    @include flex;
+  }
+
+  &__footer-btn {
+    font-weight: 700;
+    color: #f4f6f5;
+    padding: 13px 17px;
+    background-color: $green;
+  }
+
+  &__footer-checkout {
+    background-color: $red;
+  }
+}
